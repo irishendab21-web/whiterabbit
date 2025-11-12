@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&family=Italiana&family=Ramaraja&family=Rokkitt&display=swap"
+        rel="stylesheet">
+
+    <title>MyPortfolio</title>
+</head>
+
+<body>
+
+
+    <div class="grid-container">
+
+
+        <div class="first-child">
+      <nav>
+        <a class="logo" href="index.html">
+          <img src="logo.png" alt="MyPortfolio Logo"> MyPortfolio
+        </a>
+
+        <ul id="navLinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+            <span id="menu">&#9776</span>
+           
+        </div>
+
+
+
+        <div class="intro-text">
+            <h1>About Me </h1>
+            <p>Hello! I'm Princess Irish, a passionate student and creative dreamer.
+                 I enjoy exploring art, digital design, and front-end web creation. </p>
+
+            <h2> Skills & Expertise:</h2>
+            <ul>
+                <li>Digital Design & Layout</li>
+                <li>Beginner Front-End Developer</li>
+            </ul>
+
+            <h2> Languages:</h2>
+           <img src="picturee.png" alt="Princess Irish">
+
+            <h2>Goal:</h2>
+            <p>To keep improving my web design and coding skills while adding my personal touch of elegance and creativity
+                into everything I make. </p>
+        </div>
+        <script>
+    const menu = document.getElementById("menu");
+    const navLinks = document.getElementById("navLinks");
+
+    menu.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+  </div>
+</body>
+
+</html>

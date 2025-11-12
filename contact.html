@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&family=Italiana&family=Ramaraja&family=Rokkitt&display=swap"
+        rel="stylesheet">
+    <title>MyPortfolio</title>
+</head>
+
+<body>
+    <div class="grid-container">
+
+          <div class="first-child">
+      <nav>
+        <a class="logo" href="index.html">
+          <img src="logo.png" alt="MyPortfolio Logo"> MyPortfolio
+        </a>
+
+        <ul id="navLinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+            <span id="menu">&#9776</span>
+           
+            </nav>
+        </div>
+
+        <div class="second-child">
+            <input type="checkbox" id="popup-toggle" hidden>
+
+            <label for="popup-toggle">
+                <img src="picture.png" alt="Princess Irish" id="profile-pic">
+            </label>
+
+            <div class="contact-popup">
+                <p>Email: <a href= "https://mail.google.com/mail/mu/mp/568/#tl/priority/%5Esmartlabel_personal" target="_blank">irishendab21@gmail.com</a>             
+                <p>Phone: 09123456789</p>
+                <p>Facebook: <a href="https://www.facebook.com/profile" target="_blank">Princess Irish</a></p>
+                <label for="popup-toggle" class="close-btn">&times;</label>
+            </div>
+        </div>
+
+        <div class="intro-text">
+            <h1>Behind this photo, are ways to reach me! </h1>
+        </div>
+
+        </div>
+         <script>
+    const menu = document.getElementById("menu");
+    const navLinks = document.getElementById("navLinks");
+
+    menu.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+    </div>
+</body>
+</html>
